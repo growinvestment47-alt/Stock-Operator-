@@ -3,75 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Plans - Stock Operator</title>
+  <title>Plans - Stock Operator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">
-      <img src="logo.jpg" alt="Logo">
-    </div>
+    <div class="logo"><img src="logo.jpg" alt="Logo"></div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="plans.html" class="active">Plans</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <label class="switch">
+    <label class="theme-switch">
       <input type="checkbox" id="theme-toggle">
       <span class="slider"></span>
     </label>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
   </nav>
+  <div class="overlay"></div>
 
-  <!-- Plans Section -->
-  <section id="plans">
-    <h2>Choose Your Plan</h2>
-    <p style="text-align:center; margin-bottom: 30px;">
-      Flexible funding plans designed to help traders grow with confidence.
-    </p>
-
-    <div class="plans-container">
-      <div class="plan">
+  <section class="page-content">
+    <h2>Our Funding Plans</h2>
+    <div class="plans">
+      <div class="plan-card">
         <h3>Starter</h3>
-        <p class="price">₹50,000,000</p>
-        <ul>
-          <li>Fee: ₹5,000,000</li>
-          <li>Profit Split: 70% / 30%</li>
-          <li>1 Free Retry</li>
-        </ul>
-        <a href="contact.html" class="btn">Get Started</a>
+        <p>Account Size: ₹50,000,000</p>
+        <p>Fee: ₹5,000,000</p>
+        <p>Profit Split: 70% (Trader) / 30% (Company)</p>
       </div>
-
-      <div class="plan popular">
+      <div class="plan-card">
         <h3>Pro</h3>
-        <p class="price">₹150,000,000</p>
-        <ul>
-          <li>Fee: ₹10,000,000</li>
-          <li>Profit Split: 75% / 25%</li>
-          <li>2 Free Retries</li>
-        </ul>
-        <a href="contact.html" class="btn">Get Started</a>
+        <p>Account Size: ₹150,000,000</p>
+        <p>Fee: ₹10,000,000</p>
+        <p>Profit Split: 75% / 25%</p>
       </div>
-
-      <div class="plan">
+      <div class="plan-card">
         <h3>Elite</h3>
-        <p class="price">₹800,000,000</p>
-        <ul>
-          <li>Fee: ₹50,000,000</li>
-          <li>Profit Split: 80% / 20%</li>
-          <li>Unlimited Retries</li>
-        </ul>
-        <a href="contact.html" class="btn">Get Started</a>
+        <p>Account Size: ₹800,000,000</p>
+        <p>Fee: ₹50,000,000</p>
+        <p>Profit Split: 80% / 20%</p>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Stock Operator. All rights reserved.</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
