@@ -10,6 +10,26 @@ body {
   line-height: 1.6;
   background: #f9f9f9;
   color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+  background: #000814;
+}
+
+body.dark-mode .plan {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode footer {
+  background: #000814;
 }
 
 /* Navbar */
@@ -74,6 +94,7 @@ body {
 
 .hero h1 {
   font-size: 2.5rem;
+  min-height: 60px; /* prevents jumpy layout while typing */
 }
 
 .hero p {
@@ -101,6 +122,34 @@ body {
   color: #0074D9;
 }
 
+/* Stats Section */
+#stats {
+  padding: 40px;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.counter-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 150px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.counter {
+  font-size: 2rem;
+  color: #0074D9;
+  display: block;
+}
+
 /* Footer */
 footer {
   background: #001f3f;
@@ -108,6 +157,51 @@ footer {
   text-align: center;
   padding: 15px 0;
   margin-top: 20px;
+}
+
+/* Toggle Switch (Dark Mode Button) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #0074D9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
 }
 
 /* Responsive */
