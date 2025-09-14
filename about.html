@@ -3,55 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Stock Operator</title>
+  <title>About - Stock Operator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">
-      <img src="logo.jpg" alt="Logo">
-    </div>
+    <div class="logo"><img src="logo.jpg" alt="Logo"></div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
       <li><a href="plans.html">Plans</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <label class="switch">
+    <label class="theme-switch">
       <input type="checkbox" id="theme-toggle">
       <span class="slider"></span>
     </label>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
   </nav>
+  <div class="overlay"></div>
 
-  <!-- About Content -->
-  <section class="about">
-    <h2>Who We Are</h2>
-    <p>
-      Stock Operator is a funded trading program that empowers traders worldwide by providing access to capital. 
-      Our mission is to discover, support, and grow talented traders by offering the resources they need to succeed.
-    </p>
-
-    <h2>How It Works</h2>
-    <ul>
-      <li>Choose a funding plan that fits your trading goals.</li>
-      <li>Pass our evaluation phase to demonstrate your skills.</li>
-      <li>Receive funding and trade with our capital.</li>
-      <li>Keep the majority of profits while we take care of the rest.</li>
-    </ul>
-
-    <h2>Why Choose Us</h2>
-    <p>
-      We believe in creating opportunities for traders of all levels. With transparent rules, fair profit splits, 
-      and support from industry professionals, Stock Operator helps you focus on trading while we provide the capital.
-    </p>
+  <section class="page-content">
+    <h2>About Us</h2>
+    <p>We are Stock Operator — providing traders with funded accounts and helping them grow their profits.</p>
+    <p>Our mission is to empower traders by giving them capital, training, and support to succeed in global markets.</p>
   </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Stock Operator. All rights reserved.</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
