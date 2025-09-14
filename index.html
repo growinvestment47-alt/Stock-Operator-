@@ -7,30 +7,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.jpg" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- Theme Toggle -->
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 id="typing-text"></h1>
+    <p>Funded trading opportunities designed for your growth.</p>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="fade-in">
+    <h2>Our Achievements</h2>
+    <div class="stats-container">
+      <div class="counter-box">
+        <span class="counter" data-target="500">0</span>
+        <p>Traders Funded</p>
       </div>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="plans.html">Plans</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <div class="counter-box">
+        <span class="counter" data-target="1200">0</span>
+        <p>Accounts Managed</p>
+      </div>
+      <div class="counter-box">
+        <span class="counter" data-target="50">0</span>
+        <p>Countries Reached</p>
+      </div>
+    </div>
+  </section>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to Stock Operator</h1>
-      <p>Funded trading programs designed for serious traders.</p>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Stock Operator. All rights reserved.</p>
+    <p>&copy; 2025 Stock Operator. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
