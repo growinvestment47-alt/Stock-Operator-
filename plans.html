@@ -3,51 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plans - Stock Operator</title>
+  <title>Our Plans - Stock Operator</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo"><img src="logo.jpg" alt="Logo"></div>
-    <div class="hamburger"><span></span><span></span><span></span></div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="plans.html" class="active">Plans</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <label class="theme-switch">
-      <input type="checkbox" id="theme-toggle">
-      <span class="slider"></span>
-    </label>
-  </nav>
-  <div class="overlay"></div>
+  <!-- 🔹 Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="logo.jpg" alt="Logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="plans.html" class="active">Plans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
 
-  <section class="page-content">
-    <h2>Our Funding Plans</h2>
-    <div class="plans">
+  <!-- 🔹 Hero Section -->
+  <section class="hero plans-hero">
+    <div class="hero-content">
+      <h1>Our <span>Funding Plans</span></h1>
+      <p>Choose the account size that matches your goals and start trading with our capital today.</p>
+    </div>
+  </section>
+
+  <!-- 🔹 Plan Cards -->
+  <section class="plans-section fade-in">
+    <h2>Plan Options</h2>
+    <div class="plan-cards">
       <div class="plan-card">
         <h3>Starter</h3>
-        <p>Account Size: ₹50,000,000</p>
-        <p>Fee: ₹5,000,000</p>
-        <p>Profit Split: 70% (Trader) / 30% (Company)</p>
+        <p><strong>Account Size:</strong> ₹50,00,000</p>
+        <p><strong>Fee:</strong> ₹5,00,000</p>
+        <p><strong>Profit Split:</strong> 70% Trader / 30% Company</p>
+        <p><strong>Best For:</strong> Beginners who want to start trading with confidence.</p>
+        <a href="contact.html" class="btn">Get Started</a>
       </div>
       <div class="plan-card">
         <h3>Pro</h3>
-        <p>Account Size: ₹150,000,000</p>
-        <p>Fee: ₹10,000,000</p>
-        <p>Profit Split: 75% / 25%</p>
+        <p><strong>Account Size:</strong> ₹1,50,00,000</p>
+        <p><strong>Fee:</strong> ₹10,00,000</p>
+        <p><strong>Profit Split:</strong> 75% Trader / 25% Company</p>
+        <p><strong>Best For:</strong> Experienced traders looking to scale up profits.</p>
+        <a href="contact.html" class="btn">Get Started</a>
       </div>
       <div class="plan-card">
         <h3>Elite</h3>
-        <p>Account Size: ₹800,000,000</p>
-        <p>Fee: ₹50,000,000</p>
-        <p>Profit Split: 80% / 20%</p>
+        <p><strong>Account Size:</strong> ₹8,00,00,000</p>
+        <p><strong>Fee:</strong> ₹50,00,000</p>
+        <p><strong>Profit Split:</strong> 80% Trader / 20% Company</p>
+        <p><strong>Best For:</strong> Professional traders aiming for high capital and global trading.</p>
+        <a href="contact.html" class="btn">Get Started</a>
       </div>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <!-- 🔹 Comparison Table -->
+  <section class="comparison fade-in">
+    <h2>Compare Plans</h2>
+    <table class="plans-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Starter</th>
+          <th>Pro</th>
+          <th>Elite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Account Size</td>
+          <td>₹50,00,000</td>
+          <td>₹1,50,00,000</td>
+          <td>₹8,00,00,000</td>
+        </tr>
+        <tr>
+          <td>One-time Fee</td>
+          <td>₹5,00,000</td>
+          <td>₹10,00,000</td>
+          <td>₹50,00,000</td>
+        </tr>
+        <tr>
+          <td>Profit Split</td>
+          <td>70 / 30</td>
+          <td>75 / 25</td>
+          <td>80 / 20</td>
+        </tr>
+        <tr>
+          <td>Scaling Opportunity</td>
+          <td>Up to 2x</td>
+          <td>Up to 3x</td>
+          <td>Up to 5x</td>
+        </tr>
+        <tr>
+          <td>Support</td>
+          <td>Email Support</td>
+          <td>Email + Chat</td>
+          <td>Dedicated Manager</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 🔹 FAQ Section -->
+  <section class="faq fade-in">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h4>Do I risk my own money?</h4>
+      <p>No. Stock Operator funds your account, you only pay a one-time fee.</p>
+    </div>
+    <div class="faq-item">
+      <h4>How do profit splits work?</h4>
+      <p>You keep the stated percentage of net profits; the rest goes to the company.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Can I upgrade my plan later?</h4>
+      <p>Yes, traders can scale up their accounts and upgrade plans based on performance.</p>
+    </div>
+  </section>
+
+  <!-- 🔹 Call to Action -->
+  <section class="cta fade-in">
+    <h2>Ready to Trade?</h2>
+    <p>Pick a plan today and start trading with company-funded accounts.</p>
+    <a href="contact.html" class="btn">Get Started</a>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    <p>&copy; 2025 Stock Operator. All rights reserved.</p>
+  </footer>
 </body>
 </html>
