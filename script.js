@@ -1,33 +1,10 @@
-// ========================
-// Mobile Menu Toggle
-// ========================
-function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  navLinks.classList.toggle('show');
-}
-
-// Close menu after clicking a link (mobile)
-document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll(".nav-links a");
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      const navList = document.querySelector(".nav-links");
-      if (navList.classList.contains("show")) {
-        navList.classList.remove("show");
-      }
-    });
-  });
-});
-
-// ========================
-// Dark Mode Toggle
-// ========================
+// ====== Dark Mode Toggle with localStorage ======
 const toggleBtn = document.getElementById('theme-toggle');
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+  if (toggleBtn) toggleBtn.checked = true;
+}
 if (toggleBtn) {
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-mode');
-    toggleBtn.checked = true;
-  }
   toggleBtn.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
     if (document.body.classList.contains('dark-mode')) {
@@ -38,9 +15,13 @@ if (toggleBtn) {
   });
 }
 
-// ========================
-// Typing Effect in Hero Section
-// ========================
+// ====== Mobile Menu Toggle ======
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+
+// ====== Typing Effect (Home Page only) ======
 const typingElement = document.getElementById("typing-text");
 if (typingElement) {
   const typingPhrases = ["We Fund.", "You Trade.", "We Grow Together."];
@@ -69,9 +50,7 @@ if (typingElement) {
   typeEffect();
 }
 
-// ========================
-// Fade-in on scroll
-// ========================
+// ====== Fade-in on Scroll ======
 const faders = document.querySelectorAll('.fade-in');
 if (faders.length > 0) {
   const appearOptions = { threshold: 0.3 };
@@ -85,9 +64,7 @@ if (faders.length > 0) {
   faders.forEach(fader => appearOnScroll.observe(fader));
 }
 
-// ========================
-// Stats Counter Animation
-// ========================
+// ====== Stats Counter Animation (Home Page only) ======
 const counters = document.querySelectorAll('.counter');
 const statsSection = document.getElementById("stats");
 let statsPlayed = false;
@@ -121,15 +98,23 @@ if (statsSection) {
   statsObserver.observe(statsSection);
 }
 
-// ========================
-// Smooth Scroll for Navigation
-// ========================
+// ====== Smooth Scroll for Internal Links ======
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
+    e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
-      e.preventDefault();
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
 });
+
+// ====== Contact Form (demo only) ======
+const contactForm = document.querySelector("form");
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thank you! Your message has been sent.");
+    contactForm.reset();
+  });
+}
