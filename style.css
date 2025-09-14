@@ -19,10 +19,15 @@ body {
   align-items: center;
   background: #001f3f;
   padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar .logo img {
-  height: 50px;
+  height: 25px;   /* very small logo */
+  width: auto;
+  max-width: 100px;
 }
 
 .navbar .nav-links {
@@ -38,6 +43,11 @@ body {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: yellow;
 }
 
 .navbar .nav-links a.active {
@@ -62,7 +72,16 @@ body {
   color: white;
 }
 
-/* Plans */
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Plans Section */
 #plans {
   padding: 20px;
   text-align: center;
@@ -75,6 +94,11 @@ body {
   max-width: 400px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.plan h3 {
+  margin-bottom: 10px;
+  color: #0074D9;
 }
 
 /* Footer */
@@ -97,6 +121,11 @@ footer {
     top: 60px;
     left: 0;
     text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
   }
 
   .nav-links.show {
