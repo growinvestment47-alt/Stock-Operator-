@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Stock Operator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Stock Operator Logo">
+      </a>
+      <button class="hamburger" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="plans.html">Plans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="refund.html">Refund Policy</a></li>
+        <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+        <li><label class="switch"><input type="checkbox" id="theme-toggle"><span class="slider"></span></label></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Privacy Policy Section -->
+  <section class="policy-section fade-in">
+    <h1>Privacy Policy</h1>
+    <p>At Stock Operator, your privacy and data security are very important to us. This policy explains how we collect, use, and safeguard your information.</p>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li>Personal details (name, email, phone) when you register or contact us.</li>
+      <li>Payment information for plan subscriptions.</li>
+      <li>Trading-related data when using our funded accounts.</li>
+    </ul>
+
+    <h2>How We Use Your Data</h2>
+    <ul>
+      <li>To provide and manage funded trading accounts.</li>
+      <li>To process payments and issue invoices.</li>
+      <li>To communicate updates, promotions, or support messages.</li>
+      <li>To comply with legal and regulatory obligations.</li>
+    </ul>
+
+    <h2>Data Protection</h2>
+    <p>We use industry-standard encryption and security measures to safeguard your information. Your data will not be sold or shared with third parties without your consent.</p>
+
+    <h2>Your Rights</h2>
+    <ul>
+      <li>Access your personal data.</li>
+      <li>Request corrections or deletions.</li>
+      <li>Opt out of marketing communications.</li>
+    </ul>
+
+    <p>For questions regarding this Privacy Policy, email us at <a href="mailto:support@stockoperator.com">support@stockoperator.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Stock Operator. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
