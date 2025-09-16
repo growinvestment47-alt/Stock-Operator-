@@ -19,6 +19,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="plans.html">Plans</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms</a></li>
         <li><a href="refund.html">Refund Policy</a></li>
         <li><a href="privacy.html" class="active">Privacy Policy</a></li>
         <li><label class="switch"><input type="checkbox" id="theme-toggle"><span class="slider"></span></label></li>
