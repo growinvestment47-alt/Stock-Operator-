@@ -10,51 +10,54 @@
   <!-- Navbar -->
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo">
-        <img src="logo.jpg" alt="Stock Operator Logo">
-      </a>
-      <button class="hamburger" aria-label="Menu">&#9776;</button>
+      <div class="logo">
+        <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+      </div>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="plans.html">Plans</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="refund.html">Refund Policy</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><label class="switch"><input type="checkbox" id="theme-toggle"><span class="slider"></span></label></li>
+        <li><a href="refund.html" class="active">Refund Policy</a></li>
       </ul>
+      <div class="nav-actions">
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider round"></span>
+        </label>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </div>
     </nav>
   </header>
 
   <!-- Refund Policy Section -->
-  <section class="policy-section fade-in">
-    <h1>Refund Policy</h1>
-    <p>At Stock Operator, we value transparency and fairness. Please review our refund policy below:</p>
+  <section class="terms-section fade-in">
+    <div class="container">
+      <h1>Refund Policy</h1>
+      <p>At Stock Operator, we value customer satisfaction. Please review our refund policy carefully before making any purchase.</p>
 
-    <h2>Eligibility for Refunds</h2>
-    <p>Refunds may be granted under the following circumstances:</p>
-    <ul>
-      <li>If the service has not been activated within 7 days of payment.</li>
-      <li>If a technical error caused duplicate billing.</li>
-      <li>If you cancel before using the trading account.</li>
-    </ul>
+      <h2>1. Non-Refundable Fees</h2>
+      <p>All registration, evaluation, and plan fees are <strong>non-refundable</strong>. By purchasing a plan, you acknowledge and agree to this condition.</p>
 
-    <h2>Non-Refundable Situations</h2>
-    <ul>
-      <li>Once you have accessed or used the funded trading account.</li>
-      <li>If the account was terminated due to violation of trading rules.</li>
-      <li>After 7 days of purchase (unless required by law).</li>
-    </ul>
+      <h2>2. Exceptional Cases</h2>
+      <p>Refunds may only be considered in the following situations:</p>
+      <ul>
+        <li>Duplicate payments due to technical errors.</li>
+        <li>System errors that prevent service delivery.</li>
+        <li>Any case where Stock Operator is unable to provide the purchased service.</li>
+      </ul>
 
-    <h2>How to Request a Refund</h2>
-    <p>To request a refund, contact us at <a href="mailto:stockoperator@gmail.com">stockoperator@gmail.com</a> with your order ID and details. We will review and respond within 5–7 business days.</p>
+      <h2>3. Refund Process</h2>
+      <p>If you believe you qualify for a refund, please contact us within <strong>7 business days</strong> of your purchase with proof of payment.</p>
 
-    <p><strong>Note:</strong> All refunds will be processed to the original payment method.</p>
+      <h2>4. Contact for Refunds</h2>
+      <p>For refund requests, please contact us via the <a href="contact.html">Contact Page</a>.</p>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Stock Operator. All Rights Reserved.</p>
+    <p>© 2025 Stock Operator. All Rights Reserved.</p>
   </footer>
 
   <script src="script.js"></script>
